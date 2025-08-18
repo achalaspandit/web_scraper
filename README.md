@@ -2,7 +2,14 @@
 
 ## Architecture
 
+The pipeline consists of two main stages: gathering useful links and preparing the knowledge base. 
 
+In the first stage, find_useful_links.py processes insurance website sitemap links to generate a list of relevant URLs, stored in useful_links.txt. 
+
+In the second stage, web_scraper.py scrapes webpages from this list, converts HTML to markdown, chunks the content, generates embeddings, and stores them in a Qdrant vector database hosted on the same AWS EC2 instance with EBS storage.
+
+
+<img width="862" height="536" alt="insurance drawio (1)" src="https://github.com/user-attachments/assets/1da89b33-a138-4f98-bea8-d59e238c30f2" />
 
 
 ## Setup
