@@ -128,12 +128,13 @@ To manage Qdrant collections, use the below helper scripts. Before running the s
 Follow these steps to run the full pipeline 
 
 1. Generate `useful_links.txt`
-Run `find_useful_links.py` locally to create the list of relevant URLs. You can modify `sitemap_links` variable in the script to add, remove or update sitemap links of insurance websites as needed.
+NOTE: You can also skip this and use the `useful_links.txt` in this repository directly to avoid rework.
+Run `find_useful_links.py` locally to create the list of relevant URLs. You can modify `sitemap_links` variable in the script to add, remove or update sitemap links of insurance websites as needed. 
 
-2. Upload S3 bucket
+3. Upload S3 bucket
 Upload the generated `useful_links.txt` into designated AWS S3 bucket.
 
-3. Connect to EC2 instance
+4. Connect to EC2 instance
 SSH into EC2 instance using the key pair
 ```sh
 ssh -i /path/to/your-key.pem ubuntu@<EC2_PUBLIC_IP>
