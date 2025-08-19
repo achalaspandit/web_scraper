@@ -102,7 +102,7 @@ def find_useful_links():
     """
     # Initialize clients
     llm, user_agents, base_headers, filter_link = get_clients()
-    sitemap_links = ["https://www.travelers.com/sitemap.xml", "https://www.mercuryinsurance.com/sitemap/sitemap.xml", "https://www.allstate.com/sitemap-main.xml", "https://www.usaa.com/sitemap.xml", ]
+    sitemap_links = ["https://www.travelers.com/sitemap.xml", "https://www.mercuryinsurance.com/sitemap/sitemap.xml", "https://www.allstate.com/sitemap-main.xml", "https://www.usaa.com/sitemap.xml" ]
     for sitemap_link in sitemap_links:
         cnt += 1
         print(f"Processing sitemap: {sitemap_link}")
